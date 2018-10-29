@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quiz of Math Knowledge"
+                android:textSize="40sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="20dp"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What is the cosine of 60 degrees?"
+                    android:textSize="20sp"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/Q1A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.5"/>
+                <RadioButton
+                    android:id="@+id/Q1B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"/>
+                <RadioButton
+                    android:id="@+id/Q1C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.7777"/>
+                <RadioButton
+                    android:id="@+id/Q1D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.33"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Who is the father of Geometry?"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/Q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check all true statements about matrix A"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"/>
+
+            <CheckBox
+                android:id="@+id/Q3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kA = Ak"/>
+            <CheckBox
+                android:id="@+id/Q3_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AB = BA"/>
+            <CheckBox
+                android:id="@+id/Q3_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A-3 is defined"/>
+            <CheckBox
+                android:id="@+id/Q3_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nonsingular is independent"/>
+            <CheckBox
+                android:id="@+id/Q3_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nonsingular has an inverse"/>
+            <CheckBox
+                android:id="@+id/Q3_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Singular is independent"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What is the square root of 196?"
+                    android:textSize="20sp"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/Q4A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11.5"/>
+                <RadioButton
+                    android:id="@+id/Q4B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13.8"/>
+                <RadioButton
+                    android:id="@+id/Q4C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14"/>
+                <RadioButton
+                    android:id="@+id/Q4D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15"/>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT"
+                android:layout_marginTop="30dp"
+                android:onClick="submit"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
